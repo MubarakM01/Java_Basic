@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add two Numbers</title>
+    <style>
+      .input {
+        padding: 10px;
+        margin: 15px;
+        display: flexbox;
+        background-color: rgb(218, 211, 255);
+        width: fit-content;
+        text-align: center;
+        justify-content: center;
+        margin-left: 670px;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0);
+      }
+      input {
+        background: #ffeded;
+        border-radius: 7px;
+        padding: 0px;
+        margin: 3px;
+        font-size: small;
+        width: fit-content;
+        border: 2px solid rgb(0, 92, 99);
+      }
+      button{
+        border-radius: 5px;
+        padding: 5px;
+        margin: 3px;
+        height: fit-content;
+        height: fit-content;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body align="Center">
+    <h1>Add Two Numbers</h1>
+    <div class="input">
+      <input type="number" id="num1" placeholder="Enter Number 1 " /><br />
+      <input type="number" id="num2" placeholder="Enter Number 2 " /><br />
+
+      <br>
+      <button onclick="addNumber()">Add</button>
+    </div>
+    <p id="result"></p>
+
+    <script>
+      function addNumber() {
+        let a = parseInt(document.getElementById("num1").value);
+        let b = parseInt(document.getElementById("num2").value);
+        document.getElementById("result").innerText =
+          "sum of two numbers : " + (a + b);
+      }
+    </script>
+  </body>
+</html>
